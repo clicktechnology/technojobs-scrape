@@ -76,7 +76,7 @@ DOWNLOADER_MIDDLEWARES = {
 ITEM_PIPELINES = {
     'jobsjson.pipelines.CSVPipeline': 300,
 # Comment out the line below if you just want to collect results in a CSV.  If you need database results too, uncomment the line below.
-    'scrapy_mysql_pipeline.MySQLPipeline': 300,
+#    'scrapy_mysql_pipeline.MySQLPipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -103,7 +103,7 @@ AUTOTHROTTLE_TARGET_CONCURRENCY = 4.0
 MYSQL_HOST = '127.0.0.1'
 MYSQL_PORT = 3306
 MYSQL_USER = 'job_data_user'
-MYSQL_PASSWORD = 'Aasdasds8976s+33'
+MYSQL_PASSWORD = 'PASSWORD'
 MYSQL_DB = 'job_data'
 MYSQL_TABLE = 'jobs_listings_json'
 MYSQL_UPSERT = False

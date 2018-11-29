@@ -8,7 +8,7 @@ First, pick a directory, say your home directory, and clone the scrape project t
 ```
 user@host ~ $ git clone https://github.com/clicktechnology/technojobs-scrape.git
 ```
-Now cd into the folder cloned folder thus..
+Now cd into the cloned folder thus..
 ```
 user@host ~ $ cd technojobs-scrape
 ```

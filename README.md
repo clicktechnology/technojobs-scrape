@@ -44,3 +44,18 @@ myusername@mydatabaseserver.com ~ $ mysql -uroot -p < /tmp/create_db.sql
  ```
  
  That's it.  All finished.  Begin scraping!
+ 
+ ## Post script
+ 
+ If you decided to use the database option, a query that would get you all the most relevant lates editions of each jo in a nice long list would look like this..
+ 
+ ```
+SELECT id, job_id, date_posted, date_scraped, job_title, job_type, location, url, job_description, job_skills 
+FROM job_data.jobs_listings_json
+WHERE id IN (
+    SELECT MAX(id)
+    FROM job_data.jobs_listings_json
+    GROUP BY job_id
+)
+ORDER BY date_posted DESC;
+ ```

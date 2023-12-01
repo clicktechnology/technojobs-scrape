@@ -10,16 +10,16 @@ First, pick a directory, say your home directory, and clone the scrape project t
 git clone https://github.com/clicktechnology/technojobs-scrape.git
 ```
 
-Now cd into the cloned folder thus..
+Now cd into the cloned folder and create a virtual environment.
 
 ```bash
-cd technojobs-scrape
+cd technojobs-scrape && python -m venv venv
 ```
 
 Now let's install the requirements for python.
 
 ```bash
-sudo pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 Now run the scrape..
